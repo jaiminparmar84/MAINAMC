@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmedabad Municipal Corporation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9e6; /* Light cream background */
+      color: #4e342e;
+      line-height: 1.6;
+      animation: fadeInBody 1.5s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background-color: #ffe0b2; /* Light cream header */
+      color: #4e342e;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      border-bottom: 5px solid #ffcc80; /* Light accent border */
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .logo-section {
+      text-align: center;
+      margin-top: 50px;
+      animation: fadeInLogo 2s ease-in;
+    }
+
+    @keyframes fadeInLogo {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .logo-section img {
+      max-width: 200px; /* Default logo size */
+      height: auto;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    /* Responsive size for mobile devices */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.5em; /* Smaller header text for mobile */
+        padding: 20px 15px; /* Adjust the padding for mobile */
+      }
+
+      .logo-section img {
+        max-width: 150px; /* Smaller logo for mobile */
+      }
+    }
+
+    .logo-section img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo-section h2 {
+      margin-top: 20px;
+      font-size: 1.8em;
+      color: #6d4c41;
+      font-weight: 600;
+    }
+
+    .logo-section p {
+      font-style: italic;
+      color: #8d6e63;
+    }
+
+    .button-section {
+      text-align: center;
+      margin: 40px 15px;
+      animation: fadeInButtons 2.5s ease-in;
+    }
+
+    @keyframes fadeInButtons {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .button-section button {
+      background-color: #ffebcd; /* Light cream button */
+      color: #4e342e;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin: 20px 10px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .button-section button:hover {
+      background-color: #ffcc80; /* Light orange on hover */
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe0b2; /* Light cream footer */
+      color: #4e342e;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Ahmedabad Municipal Corporation
+  </header>
+
+  <div class="logo-section">
+    <img src="https://i.postimg.cc/t4rbr24z/unnamed-fotor-bg-remover-202504251550.png" alt="AMC Logo">
+    <h2>Complaint Portal</h2>
+    <h1><p>"To make Ahmedabad better"</p></h1> 
+  </div>
+
+  <div class="button-section">
+    <div class="button-section">
+      <button onclick="window.location.href=' https://jaiminparmar84.github.io/Citizens/';">Citizens</button>
+    
+      <button onclick="window.location.href='https://jaiminparmar84.github.io/Coworkers/';">Coworkers</button>
+    </div>
+    
+  </div>
+
+  <footer>
+    &copy; 2025 Ahmedabad Municipal Corporation
+  </footer>
+</body>
+</html>
